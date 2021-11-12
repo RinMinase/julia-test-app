@@ -11,7 +11,8 @@
 2. Run the Julia Shell then input
 
     ```
-    include("src\\hello-world.jl")
+    include("src\\app.jl")
+    using .App
     ```
 
 ## Project Setup using Docker
@@ -35,3 +36,9 @@
     ```
     docker run -it --name julia-app -v ./src:/home/julia/ julia:latest
     ```
+
+## Project Functions
+
+| Function  | Description               |
+| --------- | ------------------------- |
+| `hello()` | Prints out "Hello world"  |
