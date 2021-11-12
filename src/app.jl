@@ -1,4 +1,7 @@
 module App
   export hello
-  hello() = print("Hello world")
+
+  function hello()
+    print("Hello world!")
+  end
 end
