@@ -1,3 +1,3 @@
 module App
-  include("modules/hello-world.jl")
+  include("modules/1_hello-world.jl")
 end
