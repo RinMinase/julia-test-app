@@ -1,5 +1,5 @@
-export hello
+export hello_world
 
-function hello()
+function hello_world()
   print("Hello world!")
 end
