@@ -13,8 +13,10 @@ function leap(year::Int)
 end
 
 function isLeapYear(year)
-  if isDivisibleBy4(year) && isEvenDivisibleBy100(year)
-    return true
+  if (isDivisibleBy100(year) && isDivisibleBy400(year)) || (!isDivisibleBy100(year) && !isDivisibleBy100(year))
+    if isDivisibleBy4(year)
+      return true
+    end
   end
 
   return false
@@ -24,6 +26,10 @@ function isDivisibleBy4(year)
   return year % 4 == 0
 end
 
-function isEvenDivisibleBy100(year)
-  return (year / 100) % 2 == 0
+function isDivisibleBy100(year)
+  return (year % 100) == 0
+end
+
+function isDivisibleBy400(year)
+  return (year % 400) == 0
 end
