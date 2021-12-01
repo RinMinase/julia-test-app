@@ -15,12 +15,20 @@
     julia> Pkg.add("Revise")
     ```
 
-### Running the project with Revise
+### Running the project **with** Revise
 
-1. Run the Julia Shell then input
+1. Run the Julia Shell then include the main jl file (revise importer file)
 
     ```
     julia> include("run.jl")
+    ```
+
+### Running the project **without** Revise
+
+1. Run the Julia Shell then include the main jl file
+
+    ```
+    julia> include("src/app.jl")
     ```
 
 ## Project Setup using Docker __(untested)__
