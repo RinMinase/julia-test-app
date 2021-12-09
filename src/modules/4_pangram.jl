@@ -5,8 +5,8 @@ function pangram(input::String)
   inputLower = Set(lowercase(input))
 
   if issubset(alphabet, inputLower)
-    print("panagram")
+    print("pangram")
   else
-    print("not a panagram")
+    print("not a pangram")
   end
 end
