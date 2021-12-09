@@ -1,4 +1,5 @@
 export rotational_cipher
+export rotationalCipher
 
 function rotational_cipher(key::Integer, input::String)
   println("Plain: " * input)
@@ -6,18 +7,29 @@ function rotational_cipher(key::Integer, input::String)
   if key % 26 == 0
     println("Cipher: " * input)
   else
-    println("Cipher: " * rotate(key, input))
+    println("Cipher: " * rotationalCipher(key, input))
   end
 end
 
-function rotate(rotations, input)::String
+function rotationalCipher(rotations, input)::String
   output = []
+  rotations = rotations % 26
 
   for i in input
     if i in 'a':'z'
-      push!(output, i + rotations)
+      if (i + rotations <= 'z')
+        push!(output, i + rotations)
+      else
+        overflow = (i + rotations) - 'z'
+        push!(output, 'a' + overflow)
+      end
     elseif i in 'A':'Z'
-      push!(output, i + rotations)
+      if (i + rotations <= 'Z')
+        push!(output, i + rotations)
+      else
+        overflow = (i + rotations) - 'Z'
+        push!(output, 'A' + overflow)
+      end
     else
       push!(output, i)
     end
