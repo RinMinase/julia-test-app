@@ -22,14 +22,6 @@ function isLeapYear(year)
   return false
 end
 
-function isDivisibleBy4(year)
-  return year % 4 == 0
-end
-
-function isDivisibleBy100(year)
-  return (year % 100) == 0
-end
-
-function isDivisibleBy400(year)
-  return (year % 400) == 0
-end
+isDivisibleBy4(year) = year % 4 == 0
+isDivisibleBy100(year) = (year % 100) == 0
+isDivisibleBy400(year) = (year % 400) == 0
