@@ -1,4 +1,5 @@
 export leap
+export isLeapYear
 
 function leap(year::Int)
   if year < 1900
