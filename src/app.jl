@@ -8,7 +8,7 @@ module App
   include("modules/7_raindrops.jl")
   include("modules/8_secret_handshake.jl")
   include("modules/9_clock.jl")
-  include("modules/10_robot-name.jl")
+  # include("modules/10_robot-name.jl") # TODO
   include("modules/11_darts.jl")
   include("modules/12_hamming.jl")
   include("modules/13_rna-transcription.jl")
@@ -20,7 +20,7 @@ module App
   include("modules/19_allergies.jl")
   include("modules/20_isogram.jl")
   include("modules/21_anagram.jl")
-  include("modules/22_minesweeper.jl")
+  # include("modules/22_minesweeper.jl") # TODO
   include("modules/23_binary-search.jl")
   include("modules/24_atbash-cipher.jl")
   include("modules/25_grains.jl")
