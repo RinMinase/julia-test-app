@@ -17,7 +17,7 @@
 
 ### Running the project **with** Revise
 
-1. Run the Julia Shell then include the main jl file (revise importer file)
+- Run the Julia Shell then include the main jl file (revise importer file)
 
     ```
     julia> include("run.jl")
@@ -25,11 +25,41 @@
 
 ### Running the project **without** Revise
 
-1. Run the Julia Shell then include the main jl file
+- Run the Julia Shell then include the main jl file
 
     ```
     julia> include("src/app.jl")
     ```
+
+### Running the project test cases
+
+- Run the Julia Shell then include the main tests file
+
+    ```
+    julia> include("tests.jl")
+    ```
+
+### Running the project **per exercise**
+
+- If you want to include the exercise file
+
+    ```
+    julia> include("src/modules/1_hello-world.jl")
+    ```
+
+### Running the project test case **per exercise**
+
+- If you want to include the exercise file
+
+    ```
+    julia> include("src/modules/1_hello-world_test.jl")
+    ```
+
+    Filename format is:
+    ```
+    <exercise number>_<exercise title>_test.jl
+
+- If you want to test the exercise file
 
 ## Project Setup using Docker __(untested)__
 
