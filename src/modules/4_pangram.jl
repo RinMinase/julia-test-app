@@ -1,6 +1,6 @@
-export panagram
+export pangram
 
-function panagram(input::String)
+function pangram(input::String)
   alphabet = Set('a':'z')
   inputLower = Set(lowercase(input))
 
