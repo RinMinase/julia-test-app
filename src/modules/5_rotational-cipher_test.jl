@@ -1,5 +1,4 @@
 using Test
-using Suppressor
 
 include("5_rotational-cipher.jl")
 
