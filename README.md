@@ -13,6 +13,7 @@
     ```
     julia> using Pkg
     julia> Pkg.add("Revise")
+    julia> Pkg.add("Suppressor")
     ```
 
 ### Running the project **with** Revise
